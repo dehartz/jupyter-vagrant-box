@@ -28,3 +28,6 @@ Thank's to [Florian Demmer](https://github.com/fdemmer) for helping with the Vag
 
 - Install Tensorflow by default
 - Install theano by default
+
+### License
+This repo is a fork of https://github.com/antonpirker/jupyter-vagrant-box.  All commits/code prior to the fork are licensed under the original owner's license(First license in LICENSE file).  All subsequent commits/code is licensed under my license(Second license in LICENSE file).
