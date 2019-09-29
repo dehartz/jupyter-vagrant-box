@@ -20,15 +20,9 @@ You need the following installed on your computer:
 
 **That's it.** I hope this is useful for some people. Have fun!
 
-
-### Thank's
-
-Thank's to [Florian Demmer](https://github.com/fdemmer) for helping with the Vagrant provisioning.
-
-
 ### Todo
 
 - Support for jupyter pdf conversion
 
 ### License
-This repo is a fork of https://github.com/antonpirker/jupyter-vagrant-box.  All commits/code prior to the fork are licensed under the original owner's license(First license starting from the top in LICENSE file).  All subsequent commits/code is licensed under my license(Second license starting from the top in LICENSE file).
+This repo is a fork of https://github.com/antonpirker/jupyter-vagrant-box.  All commits/code up to but not including commit 0b1bc4a26b5d59deab51ed5c41090afec3a41339 are licensed under the original owner's license(First license starting from the top in LICENSE file).  All commits/code from commit 0b1bc4a26b5d59deab51ed5c41090afec3a41339 onwards is licensed under my license(Second license starting from the top in LICENSE file).
