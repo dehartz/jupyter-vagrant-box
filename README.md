@@ -1,6 +1,8 @@
 # jupyter-vagrant-box
 
-This is a simple Vagrant virtual machine. It contains a setup for running Jupyter notebook with Python 3. The setup includes the [Anaconda Python distribution](https://www.anaconda.com/distribution/) which means a lot of data science packages like [NumPy](http://www.numpy.org/), [pandas](https://pandas.pydata.org/), [matplotlib](https://matplotlib.org/), [Bokeh](https://bokeh.pydata.org/en/latest/) and many more are readily included in the setup. 
+This is a simple Vagrant virtual machine. It contains a setup for running Jupyter notebook with Python 3. The setup includes the [Anaconda Python distribution](https://www.anaconda.com/distribution/) which means a lot of data science packages like [NumPy](https://numpy.org), [pandas](https://pandas.pydata.org/), [matplotlib](https://matplotlib.org/), [Bokeh](https://bokeh.pydata.org/en/latest/) and many more are readily included in the setup. 
+
+It also includes the [IJava](https://github.com/SpencerPark/IJava) java kernel for making Java jupyter notebooks.
 
 ### Prerequisites
 
@@ -26,8 +28,7 @@ Thank's to [Florian Demmer](https://github.com/fdemmer) for helping with the Vag
 
 ### Todo
 
-- Install Tensorflow by default
-- Install theano by default
+- Support for jupyter pdf conversion
 
 ### License
 This repo is a fork of https://github.com/antonpirker/jupyter-vagrant-box.  All commits/code prior to the fork are licensed under the original owner's license(First license starting from the top in LICENSE file).  All subsequent commits/code is licensed under my license(Second license starting from the top in LICENSE file).
