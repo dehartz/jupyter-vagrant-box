@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
 
   # Welcome message
   config.vm.post_up_message = "*****************************************\n\n" \
-                              "    Welcome to your data science box!\n\n"  \
+                              "    Welcome to your development box!\n\n"  \
                               "    To access your Jupyter Notebook\n" \
                               "    point your browser to:\n\n" \
                               "        http://localhost:1337\n\n" \
