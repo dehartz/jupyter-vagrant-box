@@ -4,7 +4,8 @@ echo "Install system requirements"
 apt-get --quiet update
 apt-get install -y --no-install-recommends \
 	curl \
-	git
+	git  \
+	unzip
 
 echo "Install pyenv"
 curl -# -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
