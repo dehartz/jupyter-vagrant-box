@@ -7,7 +7,8 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "data-science-box"
 
   # Port forwarding
-  config.vm.network "forwarded_port", guest: 8888, host: 8888
+  config.vm.network "forwarded_port", guest: 8888, host: 1337, host_ip: "127.0.0.1"
+
 
   # Provisioning
   config.vm.provision :shell, path: "scripts/provision-vagrant.sh"
@@ -19,7 +20,7 @@ Vagrant.configure("2") do |config|
                               "    Welcome to your data science box!\n\n"  \
                               "    To access your Jupyter Notebook\n" \
                               "    point your browser to:\n\n" \
-                              "        http://localhost:8888\n\n" \
+                              "        http://localhost:1337\n\n" \
                               "    Have fun!\n\n" \
                               "*****************************************"
 end
