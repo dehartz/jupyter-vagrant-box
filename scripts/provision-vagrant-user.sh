@@ -3,6 +3,8 @@
 echo "Install pyenv"
 touch ~/.bash_profile
 grep -q -F "export PATH=\"/home/vagrant/.pyenv/bin:\$PATH\"" ~/.bash_profile || echo "export PATH=\"/home/vagrant/.pyenv/bin:\$PATH\"" >> ~/.bash_profile
+echo "JAVA_HOME=/usr/lib/jvm/java-se-9-ri/jdk-9" >> ~/.jupyter_config.txt 
+echo "PATH=/usr/lib/jvm/java-se-9-ri/jdk-9/bin" >> ~/.jupyter_config.txt
 source ~/.bash_profile
 grep -q -F "eval \"\$(pyenv init -)\"" ~/.bash_profile || echo "eval \"\$(pyenv init -)\"" >> ~/.bash_profile
 grep -q -F "eval \"\$(pyenv virtualenv-init -)\"" ~/.bash_profile || echo "eval \"\$(pyenv virtualenv-init -)\"" >> ~/.bash_profile

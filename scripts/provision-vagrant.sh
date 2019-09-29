@@ -11,7 +11,7 @@ curl -# -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-install
 
 echo "Setup home directory"
 ln -s /vagrant/ /home/vagrant/data
-chown vagrant.vagrant /home/vagrant/data
+chown vagrant:vagrant /home/vagrant/data
 
 echo "Setup Jupyter auto start"
 cat >/etc/systemd/system/jupyter.service <<EOL
@@ -21,6 +21,7 @@ Description=Jupyter Workplace
 [Service]
 Type=simple
 PIDFile=/run/jupyter.pid
+EnvironmentFile=/home/vagrant/.jupyter_config.txt
 ExecStart=/home/vagrant/.pyenv/versions/anaconda3-5.1.0/bin/jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --NotebookApp.token= --notebook-dir=/home/vagrant/data
 User=vagrant
 Group=vagrant
@@ -31,6 +32,9 @@ RestartSec=10
 [Install]
 WantedBy=multi-user.target
 EOL
+
+touch /home/vagrant/.jupyter_config.txt
+chown vagrant:vagrant /home/vagrant/.jupyter_config.txt
 
 systemctl enable jupyter.service
 systemctl daemon-reload
