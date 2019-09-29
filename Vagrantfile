@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
   # Provisioning
   config.vm.provision :shell, path: "scripts/provision-vagrant.sh"
   config.vm.provision :shell, path: "scripts/provision-vagrant-user.sh", privileged: false
+  config.vm.provision :shell, path: "scripts/provision-ijava.sh", privileged: false
 
   # Welcome message
   config.vm.post_up_message = "*****************************************\n\n" \
