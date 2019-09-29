@@ -19,3 +19,6 @@ unzip -o ijava-1.3.0.zip
 rm -f ijava-1.3.0.zip
 
 python install.py --sys-prefix
+
+rm -rf './java/'
+rm -f './install.py'
