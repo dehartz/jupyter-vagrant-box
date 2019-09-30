@@ -12,7 +12,7 @@ You need the following installed on your computer:
 
 ### Usage
 - Download the repo and unzip it in your directory of choice
-- Copy any .ipynb files into the directory with the Vagrantfile.
+- Copy any .ipynb files you already have into the directory with the Vagrantfile.
 - Run the shell command `vagrant up` in the directory with the Vagrantfile.
 - Wait until the virtual machine is setup and ready. (nevermind the red colored output)
 - Point your browser to [http://localhost:1337](http://localhost:1337)
